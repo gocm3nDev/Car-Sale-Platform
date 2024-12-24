@@ -1,0 +1,646 @@
+@import url("https://fonts.googleapis.com/css?family=Titillium+Web");
+
+body {
+  margin: 0;
+  font-family: "Titillium Web", sans-serif;
+  color: #ffffff;
+  background-color: aliceblue !important;
+  justify-content: center;
+  align-items: center;
+  overflow-x: hidden;
+}
+
+* {
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+}
+
+.info {
+  width: 100%;
+  height: 300px;
+  font-family: sans-serif;
+  margin-top: 60px;
+}
+
+.slogan1 {
+  color: black;
+  font-size: 20px;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.slogan2 {
+  color: black;
+  font-size: 40px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.slogan3 {
+  background-color: aliceblue;
+  border: 3px solid black;
+  display: flex;
+  font-size: 20px;
+  width: 300px;
+  margin: 0 auto;
+  padding: 10px;
+  color: black;
+  text-align: center;
+  margin-top: 30px;
+  transform: scale(1);
+  transition: 0.8s ease-in-out;
+  user-select: none;
+}
+
+.slogan3:hover {
+  border: none;
+  background-color: #000;
+  color: aliceblue;
+  transform: scale(1.1);
+  transition: 0.8s ease-in-out;
+}
+
+.navbar-brand img {
+  width: 80px;
+}
+
+.navbar-nav {
+  align-items: center;
+}
+
+.navbar .navbar-nav .nav-link {
+  color: #fff;
+  font-size: 1.1em;
+  padding: 0.5em 1em;
+}
+
+@media screen and (min-width: 768px) {
+  .navbar-brand img {
+    width: 100px;
+  }
+
+  .navbar-brand {
+    margin-right: 0;
+    padding: 0 1em;
+  }
+}
+
+.logo {
+  font-size: 40px;
+  font-weight: bold;
+  user-select: none;
+  margin-top: 30px;
+}
+
+a {
+  text-decoration: none !important;
+  color: white !important;
+}
+
+#but1 {
+  margin-top: 40px;
+}
+
+#but2 {
+  margin-top: 40px;
+  margin-left: 45px;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  width: 100%;
+  position: relative;
+  margin: auto;
+}
+
+/* önceki, sonraki butonları */
+.prev,
+.next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  padding: 16px;
+  margin-top: -22px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* sonraki butonu sağa yaslama */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover,
+.next:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active,
+.dot:hover {
+  background-color: #717171;
+}
+
+/* daha küçük ekranlarda yazının da küçülmesi için */
+@media only screen and (max-width: 300px) {
+  .prev,
+  .next,
+  .text {
+    font-size: 11px
+  }
+}
+
+.brands {
+  width: 100%;
+  height: 300px;
+  background-color: aliceblue;
+}
+
+.displayBrands {
+  overflow: hidden;
+  width: 100%;
+  height: 200px;
+  background-color: aliceblue;
+  display: inline-block;
+  user-select: none;
+}
+
+.displayBrands img {
+  user-select: none;
+  pointer-events: none;
+  -webkit-user-drag: none;
+  margin-left: 40px;
+  width: 250px;
+  height: 200px;
+}
+
+/* Metin sol klik ile seçildiğinde arka planı siyah, metin rengi beyaz */
+::selection {
+  background: black;
+  color: white;
+}
+
+::-moz-selection {
+  background: black;
+  color: white;
+}
+
+/* Scrollbar Özelleştirmesi */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey;
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: black;
+}
+
+/* Scrollbar bitiş */
+
+.brands img {
+  background-color: aliceblue;
+}
+
+.videoplay {
+  top: 0;
+}
+
+.contactC {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  z-index: 1000;
+}
+
+.contactC i {
+  font-size: 25px;
+  transform: scale(1);
+  transition: transform 0.8s ease;
+}
+
+.contactC i:hover {
+  transform: scale(1.2);
+  transition: transform 0.8s ease;
+}
+
+.chat {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: none;
+  background-color: rgb(107, 117, 125);
+  transform: scale(1);
+  transition: transform 0.8s ease;
+}
+
+.chat:hover {
+  transform: scale(1.2);
+  transition: transform 0.8s ease;
+}
+
+.custom-panel {
+  overflow: scroll;
+  text-align: center;
+  margin: 0 auto;
+  position: fixed;
+  top: 0;
+  right: -400px;
+  height: 90%;
+  border-radius: 15px;
+  width: 400px;
+  background-color: aliceblue;
+  box-shadow: -4px 0 8px rgba(0, 0, 0, 0.5);
+  transition: right 0.8s ease;
+  top: 5%;
+}
+
+.custom-panel h6 {
+  color: red;
+}
+
+.custom-panel.open {
+  right: 0;
+  z-index: 999;
+}
+
+.closeButton {
+  width: 30px;
+  background: transparent;
+  border: none;
+  float: right;
+  transform: scale(1);
+  transition: transform 0.8s ease;
+}
+
+.closeButton:hover {
+  transform: scale(1.2);
+  transition: transform 0.8s ease;
+  background-color: red;
+  color: white;
+}
+
+#myPanel label {
+  margin-right: 20px;
+}
+
+form button {
+  background: transparent;
+  width: 200px;
+  height: 40px;
+  transform: scale(1);
+  transition: transform 0.8s ease;
+}
+
+form button:hover {
+  background-color: black;
+  color: white;
+  letter-spacing: 2px;
+  transform: scale(1.1);
+  transition: transform 0.8s ease;
+}
+
+.p-link {
+  color: black !important;
+}
+
+.headOfEvent {
+  user-select: none;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 35px;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 100px;
+  background-color: transparent;
+  transition: background-color 0.8s ease, transform 0.8s ease;
+  transform: scale(1);
+}
+
+.headOfEvent:hover {
+  background-color: black;
+  color: white;
+  letter-spacing: 1px;
+  transition: background-color 0.8s ease, transform 0.8s ease;
+  transform: scale(1.1);
+}
+
+.input2 {
+  max-width: 300px;
+  min-height: 40px;
+  padding: 10px;
+  font-family: 'Courier New', Courier, monospace;
+  outline: none;
+  background: #e8e8e8;
+  box-shadow: 5px 5px 17px #c8c8c8,
+    -5px -5px 17px #ffffff;
+  border: none;
+  border-radius: 10px;
+  transition: all .5s;
+  margin-bottom: 15px;
+}
+
+.input2:focus {
+  background: #e8e8e8;
+  box-shadow: inset 5px 5px 17px #c8c8c8,
+    inset -5px -5px 17px #ffffff;
+}
+
+/* Gönder butonu */
+.sendMail {
+  font-family: 'Courier New', Courier, monospace;
+  padding: 0.7em 1.7em;
+  font-size: 18px;
+  border-radius: 0.5em;
+  background: #e8e8e8;
+  cursor: pointer;
+  border: 1px solid #e8e8e8;
+  transition: all 0.3s;
+  box-shadow: 6px 6px 12px #c5c5c5, -6px -6px 12px #ffffff;
+}
+
+.sendMail:hover {
+  background: #e8e8e8;
+  color: black;
+  letter-spacing: 0px;
+}
+
+/* mail buton bitiş */
+
+.nav-link {
+  width: 100px;
+  text-align: center;
+}
+
+.nav-link:hover {
+  background-color: rgb(125, 131, 136);
+
+}
+
+.makeComment {
+  width: 400px;
+  border: none;
+  outline: none;
+  border-radius: 15px;
+  padding: 1em;
+  background-color: #ccc;
+  box-shadow: inset 2px 5px 10px rgba(0, 0, 0, 0.3);
+  transition: 300ms ease-in-out;
+}
+
+.makeComment:focus {
+  background-color: white;
+  transform: scale(1.05);
+  box-shadow: 13px 13px 100px #969696,
+    -13px -13px 100px #ffffff;
+}
+
+/* Linkedin buton */
+
+.linkedin {
+  background: transparent;
+  position: relative;
+  padding: 5px 15px;
+  display: flex;
+  align-items: center;
+  font-size: 17px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid rgb(0, 119, 181);
+  border-radius: 25px;
+  outline: none;
+  overflow: hidden;
+  color: rgb(0, 119, 181);
+  transition: color 0.3s 0.1s ease-out;
+  text-align: center;
+}
+
+.linkedin span {
+  margin: 10px;
+}
+
+.linkedin::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  content: "";
+  border-radius: 50%;
+  display: block;
+  width: 20em;
+  height: 20em;
+  left: -5em;
+  text-align: center;
+  transition: box-shadow 0.5s ease-out;
+  z-index: -1;
+}
+
+.linkedin:hover {
+  color: #fff;
+  border: 1px solid rgb(0, 119, 181);
+}
+
+.linkedin:hover::before {
+  box-shadow: inset 0 0 0 10em rgb(0, 119, 181);
+}
+
+/* Linkedin buton bitiş */
+/* Github buton */
+
+.github {
+  background: transparent;
+  position: relative;
+  padding: 5px 15px;
+  display: flex;
+  align-items: center;
+  font-size: 17px;
+  font-weight: 600;
+  text-decoration: none;
+  cursor: pointer;
+  border: 1px solid rgb(36, 41, 46);
+  border-radius: 25px;
+  outline: none;
+  overflow: hidden;
+  color: rgb(36, 41, 46);
+  transition: color 0.3s 0.1s ease-out;
+  text-align: center;
+}
+
+.github span {
+  margin: 10px;
+}
+
+.github::before {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  content: "";
+  border-radius: 50%;
+  display: block;
+  width: 20em;
+  height: 20em;
+  left: -5em;
+  text-align: center;
+  transition: box-shadow 0.5s ease-out;
+  z-index: -1;
+}
+
+.github:hover {
+  color: #fff;
+  border: 1px solid rgb(36, 41, 46);
+}
+
+.github:hover::before {
+  box-shadow: inset 0 0 0 10em rgb(36, 41, 46);
+}
+
+/* Github buton bitiş */
+
+.buttonC {
+  display: inline-flex;
+  gap: 10px;
+  width: 100%;
+  justify-content: center;
+}
+
+footer {
+  width: 100%;
+  height: 70px;
+  background-color: #000;
+  display: flexbox;
+  align-items: center;
+}
+
+.footerP {
+  color: white;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  text-shadow:
+    0 0 5px white,
+    0 0 10px white,
+    0 0 15px white,
+    0 0 20px #ff00ff,
+    0 0 30px #ff00ff,
+    0 0 40px #ff00ff,
+    0 0 50px #ff00ff,
+    0 0 75px #ff00ff;
+}
+
+.card-title a {
+  color: black !important;
+}
+
+.general-container .container {
+  display: flex;
+  gap: 10px;
+}
+
+iframe {
+  position: relative;
+}
+
+.container p {
+  margin: 0;
+}
+
+.navbar-nav .nav-item {
+  padding: 0 10px;
+}
+
+.centered {
+  text-align: center;
+}
+
+.centered hr {
+  border: 2px solid black;
+}
+
+.testimonial-card .card-up {
+  height: 120px;
+  border-top-left-radius: .25rem;
+  border-top-right-radius: .25rem;
+}
+
+.aqua-gradient {
+  background: linear-gradient(40deg, #2096ff, #05ffa3) !important;
+}
+
+.testimonial-card .avatar {
+  width: 120px;
+  margin-top: -60px;
+  border: 5px solid #fff;
+  border-radius: 50%;
+}
+
+/* logo slider */
+
+
+.slider {
+  animation: slidein 30s linear infinite;
+  white-space: nowrap;
+}
+
+.logos {
+  width: 100%;
+  display: inline-block;
+  margin: 0px 0;
+}
+
+.fab {
+  width: calc(100% / 5);
+  animation: fade-in 0.5s cubic-bezier(0.455, 0.03, 0.515, 0.955) forwards;
+}
+
+
+@keyframes slidein {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+
+  to {
+    transform: translate3d(-100%, 0, 0);
+  }
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+/* logo slider bitis */

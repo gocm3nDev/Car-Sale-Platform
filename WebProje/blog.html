@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="tr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VOITURES Blog</title>
+    <link rel="stylesheet" href="CSS_Files/style.css">
+    <link rel="stylesheet" href="CSS_Files/comment.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+HR+Lijeva:wght@100..400&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <div class="contactC">
+        <button class="chat" id="togglePanel"><i class="bi bi-chat-dots-fill"></i></button>
+    </div>
+
+    <div id="myPanel" class="custom-panel">
+        <div class="p-3">
+            <button id="closePanel" class="closeButton"><i class="bi bi-x-lg"></i></button>
+            <h4>Bizimle İletişime Geçin</h4>
+            <h6>Tecrübeli canlı destek ekibimiz sorularınızı 5 dakikadan kısa süre içerisinde cevaplayacaktır.
+                İstediğiniz
+                sonuca ulaşabilmeniz için varız!</h6>
+            <hr>
+            <h5>E-Posta gönderin</h5>
+            <form action="mailto:mrgocmen01@gmail.com" method="GET" enctype="text/plain">
+                <input placeholder="Adınız" class="input2" name="firstName" type="text">
+                <textarea name="textArea" class="input2" placeholder="Metin girin..."></textarea>
+                <button class="sendMail">Gönder</button>
+            </form>
+            <br>
+            <a href="mailto:mrgocmen01@gmail.com" class="p-link">Program üzerinde E-Posta gönderin</a>
+            <hr>
+            <h5>Telefon Numaralarımız</h5>
+            <p>Lyon - Fransa (Merkez): +33 6 26 41 54 99</p>
+            <p>İstanbul - Türkiye: (212) 555 77 91</p>
+            <hr>
+            <h5>Sosyal Medya Hesaplarımız</h5>
+
+            <div class="buttonC">
+                <a href="https://www.linkedin.com/in/ahmet-efe-g%C3%B6%C3%A7men-12417131b/" target="_blank">
+                    <button class="linkedin">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor"
+                            class="bi bi-twitter" viewBox="0 0 24 24">
+                            <path
+                                d="M18.3362 18.339H15.6707V14.1622C15.6707 13.1662 15.6505 11.8845 14.2817 11.8845C12.892 11.8845 12.6797 12.9683 12.6797 14.0887V18.339H10.0142V9.75H12.5747V10.9207H12.6092C12.967 10.2457 13.837 9.53325 15.1367 9.53325C17.8375 9.53325 18.337 11.3108 18.337 13.6245V18.339H18.3362ZM7.00373 8.57475C6.14573 8.57475 5.45648 7.88025 5.45648 7.026C5.45648 6.1725 6.14648 5.47875 7.00373 5.47875C7.85873 5.47875 8.55173 6.1725 8.55173 7.026C8.55173 7.88025 7.85798 8.57475 7.00373 8.57475ZM8.34023 18.339H5.66723V9.75H8.34023V18.339ZM19.6697 3H4.32923C3.59498 3 3.00098 3.5805 3.00098 4.29675V19.7033C3.00098 20.4202 3.59498 21 4.32923 21H19.6675C20.401 21 21.001 20.4202 21.001 19.7033V4.29675C21.001 3.5805 20.401 3 19.6675 3H19.6697Z">
+                            </path>
+                        </svg>
+                        <span>LinkedIn</span>
+                    </button>
+                </a>
+                <a href="https://github.com/gocm3nDev" target="_blank">
+                    <button class="github">
+                        <svg viewBox="0 0 24 24" fill="currentColor" height="28" width="28"
+                            xmlns="http://www.w3.org/2000/svg">
+                            <path
+                                d="M12.001 2C6.47598 2 2.00098 6.475 2.00098 12C2.00098 16.425 4.86348 20.1625 8.83848 21.4875C9.33848 21.575 9.52598 21.275 9.52598 21.0125C9.52598 20.775 9.51348 19.9875 9.51348 19.15C7.00098 19.6125 6.35098 18.5375 6.15098 17.975C6.03848 17.6875 5.55098 16.8 5.12598 16.5625C4.77598 16.375 4.27598 15.9125 5.11348 15.9C5.90098 15.8875 6.46348 16.625 6.65098 16.925C7.55098 18.4375 8.98848 18.0125 9.56348 17.75C9.65098 17.1 9.91348 16.6625 10.201 16.4125C7.97598 16.1625 5.65098 15.3 5.65098 11.475C5.65098 10.3875 6.03848 9.4875 6.67598 8.7875C6.57598 8.5375 6.22598 7.5125 6.77598 6.1375C6.77598 6.1375 7.61348 5.875 9.52598 7.1625C10.326 6.9375 11.176 6.825 12.026 6.825C12.876 6.825 13.726 6.9375 14.526 7.1625C16.4385 5.8625 17.276 6.1375 17.276 6.1375C17.826 7.5125 17.476 8.5375 17.376 8.7875C18.0135 9.4875 18.401 10.375 18.401 11.475C18.401 15.3125 16.0635 16.1625 13.8385 16.4125C14.201 16.725 14.5135 17.325 14.5135 18.2625C14.5135 19.6 14.501 20.675 14.501 21.0125C14.501 21.275 14.6885 21.5875 15.1885 21.4875C19.259 20.1133 21.9999 16.2963 22.001 12C22.001 6.475 17.526 2 12.001 2Z">
+                            </path>
+                        </svg>
+                        <span>GitHub</span>
+                    </button>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-md navbar-dark bg-secondary">
+        <div class="container-fluid">
+            <a class="navbar-brand d-md-none" href="#">
+                <img src="logo.png" alt="">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav mx-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="login.html" id="UN">Giriş Yap</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cars.html">Araçlarımız</a>
+                    </li>
+                    <a class="navbar-brand d-none d-md-block" href="index.html">
+                        <img src="logo.png" alt="">
+                    </a>
+                    <li class="nav-item">
+                        <a class="nav-link" href="blog.html">Blog</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="com.html">İletişim</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <br><br>
+    <h2 class="com-header">Efsaneler: Ayrton Senna Honda NSX-R Test Ediyor</h2>
+    <hr>
+    <br>
+    <div class="container mt-4">
+        <div class="row align-items-center">
+            <div class="col-md-6">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/rfYPwaIOVJ8?si=3f8m5gCTG7JnHpm8"
+                    title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+            </div>
+            <div class="col-md-6">
+                <p>
+                    "NSX-R ile tanıştığımda, bir spor otomobilden beklediğimden çok daha fazlasını sunduğunu hemen
+                    hissettim. Honda mühendisleriyle
+                    uzun saatler boyunca bu otomobili geliştirmek için çalıştım, çünkü yalnızca hız değil, aynı zamanda
+                    sürücünün araçla kurduğu bağ benim
+                    için çok önemliydi. Bu otomobilde hissettiğiniz şey, saf bir sürüş deneyimi. Direksiyonun size
+                    verdiği tepki, gaz pedalıyla motor
+                    arasındaki iletişim, süspansiyonun yola olan adaptasyonu... Bunların hepsi bir araya geldiğinde,
+                    gerçekten bir makineyle tam bir
+                    uyum içinde olduğunuzu hissettiriyor. NSX-R’ı piste çıkardığımda, günlük sürüş konforundan ödün
+                    vermeden bir yarış otomobili hissiyatını
+                    nasıl bu kadar dengede tuttuklarını görmek beni etkiledi. Hafiflik, denge ve sürüş hassasiyeti bu
+                    otomobili eşsiz kılıyor. Yüksek hızlarda
+                    bile otomobil size sanki yoldaki her pürüzü anlatıyor, her köşe bir dansa dönüşüyor."
+                </p>
+            </div>
+        </div>
+    </div>
+    <br>
+    <hr>
+    <br>
+
+    <div class="container py-5">
+        <div class="row row-cols-1 row-cols-md-2 g-4">
+            <div class="col">
+                <div class="card">
+                    <img src="images/one.webp" class="card-img-top card-img" alt="Car 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Yaklaşan Ralli: İmpreza gerçekten sınıfının lideri mi?</h5>
+                        <hr>
+                        <h6>C segmentinde Fransa Milli Takımı'nı temsil edecek olan Impreza, yarışta nasıl bir
+                            performans sergileyecek? Canlı izlemek için Körfez TOSFED pistine gelin.
+                            15.01.2025 14:00 tarihinde tüm kullanıcılarımızı bekliyoruz. Konumu görmek için tıklayın.
+                        </h6>
+                        <a href="https://maps.app.goo.gl/S4dYrkeo7o2bDPDx9" target="_blank"><button class="btn">Konumu
+                                Göster</button></a>
+                        <a href="https://www.mgm.gov.tr/tahmin/il-ve-ilceler.aspx?il=Kocaeli&ilce=K%C3%B6rfez"
+                            target="_blank"><button class="btn">Hava Durumu</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="images/two.webp" class="card-img-top card-img" alt="Car 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Yakında: Mazda RX-7'nin 2025 ilk çeyreğinde çıkacağını duyurdu.</h5>
+                        <hr>
+                        <h6>Efsane Geri Dönüyor: Mazda RX-7'nin 2025 Performansı Merakla Bekleniyor!
+                            Rotary motor teknolojisinin öncüsü Mazda RX-7, 2025'in ilk çeyreğinde yeniden sahneye
+                            çıkıyor. Bu ikonik spor otomobil, modern mühendislik ve performansın zirvesini sergilemeye
+                            hazırlanıyor. İstanbul Park'da test sürüşü olacak. 18.01.2025</h6>
+                        <a href="https://maps.app.goo.gl/yoF4RuDzcq1AcZ3v9" target="_blank"><button class="btn">Konumu
+                                Göster</button></a>
+                        <a href="https://www.mgm.gov.tr/tahmin/il-ve-ilceler.aspx?il=%C4%B0stanbul&ilce=Tuzla"
+                            target="_blank"><button class="btn">Hava Durumu</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="images/three.webp" class="card-img-top card-img" alt="Car 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Kazananlar: Dodge Ram çeyrek yüzyılın en sağlam aracı seçildi.</h5>
+                        <hr>
+                        <h6>Güç, dayanıklılık ve performansın simgesi Dodge Ram, otomotiv dünyasının en prestijli
+                            ödüllerinden birine layık görüldü. Son 25 yılın en sağlam aracı olarak seçilen Dodge Ram,
+                            zorlu testlerden alnının akıyla çıkarak liderliğini bir kez daha kanıtladı. Belirtilen
+                            konumda zorlu arazi testleri yapılacaktır. 27.01.2025</h6>
+                        <a href="https://maps.app.goo.gl/FzPndNwWuWnGjBLX8" target="_blank"><button class="btn">Konumu
+                                Göster</button></a>
+                        <a href="https://www.accuweather.com/tr/fr/dijon/132390/weather-forecast/132390"
+                            target="_blank"><button class="btn">Hava Durumu</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card">
+                    <img src="images/four.webp" class="card-img-top card-img" alt="Car 4">
+                    <div class="card-body">
+                        <h5 class="card-title">İddialılar: Lucid Air f/p olarak amiral gemisi mi?</h5>
+                        <hr>
+                        <h6>Elektrikli otomobil dünyasında dengeler değişiyor. Lucid Air, sunduğu lüks, performans ve
+                            teknolojiyi fiyatıyla birleştirerek “amiral gemisi” unvanına aday gösteriliyor. Tesla ve
+                            Mercedes EQS gibi rakiplerini zorlayan bu yenilikçi araç, hem menzil hem de tasarım
+                            konusunda standartları yeniden belirliyor. 15.02.2025</h6>
+                        <a href="https://maps.app.goo.gl/CbomY94NuSsM9mn1A" target="_blank"><button class="btn">Konumu
+                                Göster</button></a>
+                        <a href="https://www.accuweather.com/tr/sk/horna-poton/1265565/weather-forecast/1265565"
+                            target="_blank"><button class="btn">Hava Durumu</button></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <br><br><br>
+
+    <footer>
+        <p class="footerP">© 2025 Telif Hakkı: VOITURES</p>
+    </footer>
+
+
+    <script src="carJS/login.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="carJS/app.js"></script>
+</body>
+
+</html>
