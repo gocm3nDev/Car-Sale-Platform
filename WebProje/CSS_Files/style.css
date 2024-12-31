@@ -65,6 +65,8 @@ video {
   transition: 0.8s ease-in-out;
 }
 
+/* Navbar */
+
 .navbar-brand img {
   width: 80px;
 }
@@ -89,6 +91,8 @@ video {
     padding: 0 1em;
   }
 }
+
+/* Navbar bitiş */
 
 .logo {
   font-size: 40px;
@@ -135,19 +139,19 @@ a {
   user-select: none;
 }
 
-/* sonraki butonu sağa yaslama */
+
 .next {
   right: 0;
   border-radius: 3px 0 0 3px;
 }
 
-/* On hover, add a black background color with a little bit see-through */
+
 .prev:hover,
 .next:hover {
   background-color: rgba(0, 0, 0, 0.8);
 }
 
-/* The dots/bullets/indicators */
+
 .dot {
   cursor: pointer;
   height: 15px;
@@ -166,6 +170,7 @@ a {
 
 /* daha küçük ekranlarda yazının da küçülmesi için */
 @media only screen and (max-width: 300px) {
+
   .prev,
   .next,
   .text {
@@ -371,7 +376,7 @@ form button:hover {
     inset -5px -5px 17px #ffffff;
 }
 
-/* Gönder butonu */
+/* mail butonu */
 .sendMail {
   font-family: 'Courier New', Courier, monospace;
   padding: 0.7em 1.7em;
@@ -643,4 +648,5 @@ iframe {
     opacity: 1;
   }
 }
+
 /* logo slider bitis */

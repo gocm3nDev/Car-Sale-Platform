@@ -1,3 +1,4 @@
+//radyo butonları temizleme
 function clearRadioButtons() {
   const radios = document.querySelectorAll('input[type="radio"]');
   radios.forEach(radio => radio.checked = false);
@@ -54,9 +55,8 @@ const tools = [
     brand: "audi",
     fuel: "gasoline",
     phone: "+33 6 12 34 56 78",
-    color: "Gri", //
-    gear: "Otomatik",//
-    hp: "172 Beygir",//
+    color: "Gri",
+    gear: "Otomatik",
   },
   {
     name: "PORSCHE 911 CARRERA 4S PDK",
@@ -70,6 +70,8 @@ const tools = [
     brand: "porsche",
     fuel: "gasoline",
     phone: "+33 6 12 34 56 87",
+    color: "Koyu Gri",
+    gear: "Otomatik",
   },
   {
     name: "PORSCHE 911 TURBO",
@@ -82,7 +84,9 @@ const tools = [
     case: "super",
     brand: "porsche",
     fuel: "gasoline",
-    phone: "+90 532 699 19 06",
+    phone: "+90 553 861 38 11",
+    color: "Gri",
+    gear: "Otomatik",
   },
   {
     name: "MERCEDES-BENZ CLE 300 AMG",
@@ -96,6 +100,8 @@ const tools = [
     brand: "mercedes",
     fuel: "diesel",
     phone: "+33 6 12 11 56 60",
+    color: "Siyah",
+    gear: "Otomatik",
   },
   {
     name: "CADILLAC ESCALADE 6.2 V8",
@@ -109,6 +115,8 @@ const tools = [
     brand: "cadillac",
     fuel: "gasoline",
     phone: "+90 552 134 87 97",
+    color: "Siyah",
+    gear: "Otomatik",
   },
   {
     name: "AUDI RS6 4.0 TFSI V8 QUATTRO",
@@ -122,9 +130,12 @@ const tools = [
     brand: "audi",
     fuel: "gasoline",
     phone: "+33 6 44 01 55 29",
+    color: "Mat Gri",
+    gear: "Yarı-Otomatik",
   },
 ];
 
+//Araçları görüntüle
 const gallery = document.getElementById("gallery");
 
 tools.forEach(tool => {
